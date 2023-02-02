@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+body{
+    background-color: blanchedalmond;
+}
 header{
     display: flex;
     align-items: center;
@@ -64,6 +67,9 @@ header{
     margin-top: 20%;
     
     background-color: beige;
+}
+#expim{
+    margin: auto;
 }
 
 .portfolio-title{
@@ -156,8 +162,8 @@ footer {
 
 .footer-col h4:before{
     content: '';
-    position: absolute;
-    left: 0;
+    position:absolute;
+    left: 42%;
     bottom: -10px;
     background-color: #e91e63;
     height: 2px;
