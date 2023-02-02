@@ -1,1 +1,302 @@
 /*comment*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: white;
+    background-color: #24262b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-color: #e91e63;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.nav-links{
+    color: white;
+    list-style: none;
+}
+
+.title{
+    margin-top: 20%;
+    padding: 10px;
+    color: #e91e63;
+    font-size:larger;
+    font-weight: 8;
+}
+
+.bio-title{
+    margin-top: 15%;
+    padding: 10px;
+}
+
+
+.bio-subtitle{
+    margin-top: 20%;
+}
+
+.bio-titles{
+    margin-top: 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.experience-title{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.exp-all{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20%;
+    
+    background-color: beige;
+}
+
+.portfolio-title{
+    display: flex;
+    margin-top: 25%;
+    flex-direction: column;
+    text-align: center;
+}
+/* .work{
+    width: 60%;
+    margin: auto;
+} */
+
+.work .work1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    background-color: #e91e63;
+    flex-direction: column;
+    text-align: center;
+}
+#port-img{
+    margin: auto;
+}
+
+.work .work2{
+    display: flex;
+    justify-content: center;
+    background-color:aqua;
+    flex-direction: column;
+}
+
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.hobbies{
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-gap: 90px;
+    margin-top: 20%;
+    margin-right: 40%;
+    padding: 20px;
+}
+
+footer {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: #e91e63;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    margin-top: -5%;
+    height: 70%;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 1s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #e91e63;
+    transition: all 2s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Let's make it RESPONSIVE*/
+@media(max-width: 767px){
+    .header{
+        width: 50%;
+        margin-bottom: 30px; 
+    }
+    .introduction{
+        margin-top: 20%;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .exp-all{
+        flex-direction: column;
+    }
+
+/*     .work *{
+        font-size: 90%;
+        margin-top: 0;
+        
+    } */
+    .portfolio-title{
+        margin-top: 40%;
+
+    }
+
+
+}
+@media(max-width: 574px){
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .introduction{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 80%;
+    }
+
+    .title{
+        margin-top: 40%;
+        padding: 20px;
+    }
+
+    .work{
+        margin-top: -20%;
+    }
+
+    .pfp{
+        height:80px;
+        width:80px;
+    }
+    .footer-col{
+        width: 100%;
+        height: 10px;
+    }
+    .footer{
+        height: 30%;
+        padding-top: 0;
+    }
+    #two{
+        margin-right: -50px;
+    }
+
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bio-titles{
+        margin-top: 20%;
+    }
+
+    .hobbies{
+        font-size: 80%;
+        column-gap: 40px;
+        margin-left: 50%;
+    }
+
+    .experience-title{
+        margin-top: 40%;
+    }
+
+}
